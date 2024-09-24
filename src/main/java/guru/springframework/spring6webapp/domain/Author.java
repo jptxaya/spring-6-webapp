@@ -10,7 +10,7 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String firstNane;
+    private String firstName;
     private String lastName;
 
     @ManyToMany(mappedBy = "authors")
@@ -24,12 +24,12 @@ public class Author {
         this.id = id;
     }
 
-    public String getFirstNane() {
-        return firstNane;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstNane(String firstNane) {
-        this.firstNane = firstNane;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
